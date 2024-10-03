@@ -1,0 +1,148 @@
+#signUp {
+    width: 100%;
+    display: flex;
+}
+
+.imgSignUp {
+    height: 49rem;
+    width: 65%;
+    background-image: url("https://colorlib.com/etc/lf/Login_v13/images/bg-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+
+}
+
+.imgSignUp::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #e8519e;
+    background: -webkit-linear-gradient(bottom, #e8519e, #c77ff2);
+    background: -o-linear-gradient(bottom, #e8519e, #c77ff2);
+    background: -moz-linear-gradient(bottom, #e8519e, #c77ff2);
+    background: linear-gradient(bottom, #e8519e, #c77ff2);
+    opacity: 0.8;
+}
+
+.textSign {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts {
+    width: 85%;
+    height: 36rem;
+
+}
+
+.texts span {
+    font-size: 39px;
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs div {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.inputs span {
+    font-size: 18px;
+    padding: 0;
+    color: #999999;
+}
+
+.inputs div input {
+    border: none;
+    outline-style: none;
+    height: 20px;
+}
+
+.inputs div input::placeholder {
+    font-size: 18px;
+    color: #CCCCCC;
+}
+
+.inputs .line {
+    height: 1px;
+    padding: 0;
+    width: 100%;
+}
+
+.terms {}
+
+.terms p {
+    color: #c4c3c3;
+    display: flex;
+    gap: 7px;
+
+}
+
+.terms p span {
+    color: #747474;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 100;
+    padding: 0;
+    cursor: pointer;
+}
+
+.terms p span:hover {
+    transition: all .3s;
+    color: #c77ff2;
+}
+
+.terms {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.terms input[type="checkbox"] {
+    display: none;
+}
+
+.terms label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.terms label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    background-color: #dddcdc;
+}
+
+.terms input[type="checkbox"]:checked+label::after {
+    content: "\2714";
+    font-size: 14px;
+    font-weight: 900;
+    color: #c77ff2;
+    text-align: center;
+    line-height: 16px;
+}

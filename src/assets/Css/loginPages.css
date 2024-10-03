@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+#loginSect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 49.64rem;
+    /* object-fit: cover; */
+    background-size: cover;
+    background-image: url("https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg");
+}
+
+#login {
+    width: 500px;
+    height: 48rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.textLogin {
+    margin-top: 30px;
+    text-transform: capitalize;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.loginInput {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loginInput span {
+    text-transform: capitalize;
+    color: #333339;
+    align-self: center;
+}
+
+.center {
+    padding: 30px;
+    margin: 10px;
+
+}
+
+.anadiv {
+    align-self: flex-start;
+    padding-left: 30px;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.inp input {
+    border: none;
+    height: 20px;
+}
+
+.inp input:focus {
+    outline: none;
+}
+
+.inp input[placeholder] {
+    font-size: 17px;
+}
+
+.icon {
+    color: #333339;
+}
+
+.line {
+    padding-top: 1px;
+    background-color: #D9D9D9;
+    height: 1px;
+    width: 85%;
+    margin-left: 30px;
+    animation: changeBckgrnd 2s infinite;
+}
+
+.line::before {
+    content: "";
+    background: #7f7f7f;
+}
+
+.inp input:focus + .line::before{
+    width: 100%;
+}
+.infosForLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.help {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+.help a:hover{
+    transition: all .3s;
+    color: #A95FF4;
+}
+#bttn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 30px;
+}
+
+#bttn button {
+    width: 80%;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, #00d2ff, #ff00ff);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+#bttn button:hover{
+    transition: all .2s;
+    background: linear-gradient(90deg,#ff00ff, #00d2ff);
+
+}
+.usingTools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.usingTools p{
+    font-size: 15px;
+    color: #7f7f7f;
+}
+.signWithTool{
+    display: flex;
+    gap: 30px;
+}
+.toolIcon{
+    background-color: green; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.toolIcon:nth-child(1){
+    background-color: #3B5998;
+    cursor: pointer;
+}
+.toolIcon:nth-child(2){
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
+.toolIcon:nth-child(3){
+    background-color: #EA4335;
+    cursor: pointer;
+}
+.toolIcon:hover{
+    background-color: #333339;
+    transition: all .3s;
+}
+.signUpPart{
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+.signUpPart p{
+    font-size: 15px;
+    color: #7f7f7f;
+}
+.signUpPart span{
+    color: #333339;
+    cursor: pointer;
+}
+.signUpPart span:hover{
+    transition: all .3s;
+    color: #A95FF4;
+}
