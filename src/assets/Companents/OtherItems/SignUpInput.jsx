@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
-const SignUpInput = ({label,placeholder}) => {
+const SignUpInput = ({ label, placeholder,id }) => {
+  const afterline = useRef();
+  const getLine = () => {
+    afterline.current.style.display = "block";
+  };
   return (
     <div>
-      <span>{label}</span>
-      <input type="text" placeholder={placeholder} required/>
+      <label htmlFor={id}>{label}</label>
+      <input id={id} onClick={getLine} type="text" placeholder={placeholder} required />
       <div className="line"></div>
+      <div ref={afterline} className="afterLine"></div>
     </div>
   );
 };
