@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 
+
 const SignUpInput = ({ label, placeholder,id }) => {
   const afterline = useRef();
   const getLine = () => {
@@ -8,7 +9,7 @@ const SignUpInput = ({ label, placeholder,id }) => {
   return (
     <div>
       <label htmlFor={id}>{label}</label>
-      <input id={id} onClick={getLine} type="text" placeholder={placeholder} required />
+      <input  id={id} onClick={getLine} type="text" placeholder={placeholder} required />
       <div className="line"></div>
       <div ref={afterline} className="afterLine"></div>
     </div>

@@ -2,16 +2,16 @@ import React from "react";
 import "../../Css/signUp.css";
 import SignUpInput from "../OtherItems/SignUpInput";
 import { useFormik } from "formik";
-const SignUpPage = () => {
-  const [values] = useFormik({
-    initialValues:{
-      name:"",
-      email:"",
-      user:"",
-      password:"",
-      passwordRepeat:"",
-    }
-  })
+export const SignUpPage = () => {
+  const {values, errors, handleChange,handleSubmit} = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      user: "",
+      password: "",
+      passwordRepeat: "",
+    },
+  });
   return (
     <main>
       <section id="signUp">
@@ -20,11 +20,28 @@ const SignUpPage = () => {
           <div className="texts">
             <span>Sign Up</span>
             <div className="inputs">
-              <SignUpInput id={"name"} label={"Full Name"} placeholder={"Name..."} />
-              <SignUpInput id={"email"} label={"Email"} placeholder={"Email address..."} />
-              <SignUpInput id={"user"} label={"Username"} placeholder={"Username..."} />
-              <SignUpInput id={"password"} label={"Password"} placeholder={"************"} />
-              <SignUpInput id={"passwordRepeat"}
+              <SignUpInput
+                id={"name"}
+                label={"Full Name"}
+                placeholder={"Name..."}
+              />
+              <SignUpInput
+                id={"email"}
+                label={"Email"}
+                placeholder={"Email address..."}
+              />
+              <SignUpInput
+                id={"user"}
+                label={"Username"}
+                placeholder={"Username..."}
+              />
+              <SignUpInput
+                id={"password"}
+                label={"Password"}
+                placeholder={"************"}
+              />
+              <SignUpInput
+                id={"passwordRepeat"}
                 label={"Repeat Password"}
                 placeholder={"************"}
               />
